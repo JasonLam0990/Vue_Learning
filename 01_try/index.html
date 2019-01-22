@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tasks List App</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+<body>
+    <div id="tasks-list">
+        <h1>{{header ? header : 'welcome'}}</h1>
+        <div id="add-task-form" class="input-group mb-3">
+                <input type="text" v-model="newTask" class="form-control shadow-sm" placeholder="Add a task" v-on:keyup.enter="saveTask()">
+                <div class="input-group-append">
+                    <button type="button" v-bind:disabled="true" class="btn">{{characterCount}}/200</button>
+                    <button class="btn btn-outline-secondary" type="button" v-bind:disabled="newTask.length === 0" v-on:click="saveTask()">Save Task</button>
+                </div>                
+        </div>
+        
+        <ul>
+            <li v-for="task in tasks" v-bind:class="task.finished ? 'strikeout':''">
+                <input class="checkbox" type="checkbox" v-on:click="toggleTask(task)" v-model="task.finished">
+                {{task.label}}
+                <button type="button" class="close" v-on:click="deleteTask(task.id)">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </li>
+        </ul>
+        <p v-if="tasks.length === 0">Nice job ! You've done all tasks !</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

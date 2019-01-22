@@ -1,0 +1,29 @@
+html, body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0;
+}
+
+#tasks-list{
+    width: 90%;
+}
+#add-task-form{
+    margin: 20px 0;
+}
+
+ul li{
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.strikeout{
+    color: #7f7f77;
+    text-decoration: line-through;
+}
+
+.checkbox{
+    margin-right: 15px;
+}
