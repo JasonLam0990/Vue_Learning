@@ -8,12 +8,19 @@
 
 这个demo是通过script引入vue来使用的，还是听尤大的话，不要一上来就直接用 vue-cli 构建项目，打好基础先💪
 
+- ## TodoList小应用
 
 <center>
  <img src="/images/1_index.png" margin=20% width=70% />
 </center>
 
 # 二、Practice —— A Quiz Mini Application
+
+掌握了Vue的基础知识后，希望能快速的对整个Vue生态有个基本的了解，看上了国外的一个很不错的Vue教程，但是翻墙在Udemy看网速太慢了，卡卡的。没想到B站上面竟然有人传了视频，但是没有英文字幕，不过好歹学了这么多年英文，还是能硬啃下来的，现在学习了一半有余，这是其中的一个项目实现，主要是实践了components模块化的使用以及transition过渡的一些相关知识。
+
+附B站视频链接：[Vue JS 2 - The Complete Guide (incl. Vuex)](https://www.bilibili.com/video/av8526555?from=search&seid=9792766805327330997)
+
+- ## Quiz小应用
 
 <center>
  <img src="/images/2_transition.gif" margin=20% width=70% />
