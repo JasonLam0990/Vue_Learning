@@ -13,13 +13,9 @@
  <img src="/images/1_index.png" margin=20% width=70% />
 </center>
 
-### 大致记录下收获
+# 二、Practice —— A Quiz Mini Application
 
-**一、简写**
-  - v-bind 指令可以用于响应式地更新 HTML 特性。`v-bind: -> :`
-  - v-on 指令，它用于监听 DOM 事件。 `v-on: -> @`
-  
-**二、性能优化**
-  - 这是有关页面渲染的问题，可以去了解一下。总之，引入的css文件放在head中，而js文件要放在body的最尾处，防止js阻塞渲染，导致页面渲染变慢
-  
-因为和微信小程序开发确实很像，做这样一个小demo还是没什么难度的，所以也不知道能总结些啥，也就不赘述了hhh，接下来会继续更新～！
+<center>
+ <img src="/images/2_transition.gif" margin=20% width=70% />
+</center>
+
