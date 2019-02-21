@@ -26,3 +26,13 @@
  <img src="/images/2_transition.gif" margin=20% width=70% />
 </center>
 
+# 三、Practice —— A StocksTracker Mini Application
+
+学习了Vue-Router以及Vuex后的一个练手小项目，做的东西也还是比较简单的，接下来会开始做华师同校Web网站的一些小模块，敬请期待～
+
+- ## StocksTracker小应用
+
+<center>
+ <img src="/images/3_StocksTracker.gif" margin=20% width=70% />
+</center>
+
